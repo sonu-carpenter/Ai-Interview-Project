@@ -1,6 +1,6 @@
 // Import the functions you need from the SDKs you need
 import { getApp, getApps, initializeApp } from "firebase/app";
-// import { getAnalytics } from "firebase/analytics";
+import { getAnalytics } from "firebase/analytics";
 import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 // TODO: Add SDKs for Firebase products that you want to use
@@ -24,3 +24,26 @@ const app = !getApps().length ? initializeApp(firebaseConfig) : getApp();
 
 export const auth = getAuth(app);
 export const db = getFirestore(app);
+
+// // Import the functions you need from the SDKs you need
+// import { getApp, getApps, initializeApp } from "firebase/app";
+// import { getAnalytics } from "firebase/analytics";
+// import { getAuth } from "firebase/auth";
+// import { getFirestore } from "firebase/firestore";
+
+// const firebaseConfig = {
+//   apiKey: "AIzaSyCPTNfVDXSg9OQL4gUKtR8P9o3n9QQpA9Q",
+//   authDomain: "ai-interview-d08e1.firebaseapp.com",
+//   projectId: "ai-interview-d08e1",
+//   storageBucket: "ai-interview-d08e1.firebasestorage.app",
+//   messagingSenderId: "594670003046",
+//   appId: "1:594670003046:web:2447015a5b9f7297ee9ea7",
+//   measurementId: "G-XWS1N8XW4X",
+// };
+
+// // Initialize Firebase
+// const app = !getApps().length ? initializeApp(firebaseConfig) : getApp();
+// const analytics = getAnalytics(app);
+
+// export const auth = getAuth(app);
+// export const db = getFirestore(app);
